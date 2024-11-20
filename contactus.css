@@ -1,0 +1,249 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.header {
+    background-color: #000;
+    padding: 15px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 8px;
+}
+
+.logo span {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+.highlighted {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('12.png') center/cover no-repeat;
+}
+.hero h1 {
+    font-size: 3em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.hero p {
+    color: #ccc;
+}
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #0a0a0a; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    padding: 40px;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    flex: 1;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group.full-width {
+    flex: 100%;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .submit-btn {
+    background-color: #d4af37; /* Gold button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .submit-btn:hover {
+    background-color: #b8922a;
+  }
+  
+
+
+  /* Contact Info Section */
+  .contact-info {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .contact-info p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .info-item span {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+
+  /* Stats Section Styling */
+.stats-section {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1c1c; /* Dark background */
+    color: #f1f1f1; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Individual Stat Block */
+  .stat {
+    margin: 0 20px;
+  }
+  
+  .stat h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    background-color: #000;
+    text-align: left;
+}
+.footer-content, .footer-links, .footer-subscribe {
+    flex: 1;
+}
+.footer-content .footer-logo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-logo h2 {
+    color: #ffcc00;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-content p, .footer-content address {
+    font-size: 0.9em;
+    color: #ccc;
+}
+.footer-links h3, .footer-subscribe h3 {
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+.footer-links a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.footer-subscribe input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.footer-subscribe button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+  
