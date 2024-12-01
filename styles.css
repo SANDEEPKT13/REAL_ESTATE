@@ -99,32 +99,112 @@ body {
 }
 
 /* Stats Section Styling */
-.stats-section {
-    height: 118px;
+/* Real Estate Section */
+.real-estate-section {
+    background-color: rgb(66, 66, 96);
+    padding: 40px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: #1e1c1c; /* Dark background */
-    color: #f1f1f1; /* Light text color */
-    padding: 20px 0;
+    gap: 40px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stat-item {
     text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Individual Stat Block */
-  .stat {
-    margin: 0 20px;
-  }
-  
-  .stat h2 {
+}
+
+p{
+    color: #d7d7d7;
+}
+
+.bleed{
+    color: #000;
+}
+.stat-item h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .stat p {
-    font-size: 1rem;
-    margin: 0;
-  }
+    color: #f5f5f5; /* Highlighted color */
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+/* Listing Content */
+.listing-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.image-card {
+    position: relative;
+    max-width: 400px;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-description {
+    background-color: #ffffff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -50px;
+    position: relative;
+}
+
+.card-description h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.card-description .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Listing Info */
+.listing-info {
+    max-width: 400px;
+}
+
+.listing-info h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.8rem;
+}
+
+.listing-info p {
+    margin-bottom: 20px;
+}
+
+.listing-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
   
 
 
