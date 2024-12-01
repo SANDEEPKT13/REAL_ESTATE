@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Real Estate</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="filter-container">
+        <h1>Find Your Dream Home</h1>
+        <div class="filters">
+            <select id="countryFilter">
+                <option value="all">All Countries</option>
+                <option value="india">India</option>
+                <option value="foreign">Foreign</option>
+            </select>
+            <button id="filterButton">Apply Filter</button>
+        </div>
+    </div>
+
+    <div class="property-list">
+        <div class="property" data-country="india">
+            <h3>Luxury Apartment in Mumbai</h3>
+            <p>₹3,00,00,000</p>
+        </div>
+        <div class="property" data-country="india">
+            <h3>Villa in Goa</h3>
+            <p>₹5,00,00,000</p>
+        </div>
+        <div class="property" data-country="foreign">
+            <h3>Condo in New York</h3>
+            <p>$1,200,000</p>
+        </div>
+        <div class="property" data-country="foreign">
+            <h3>Beach House in Malibu</h3>
+            <p>$3,500,000</p>
+        </div>
+    </div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
