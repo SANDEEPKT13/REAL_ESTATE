@@ -1,13 +1,14 @@
 document.getElementById("loginForm").addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const errorMessage = document.getElementById("errorMessage");
 
+    // Check if credentials match
     if (email === "sandeep@gmail.com" && password === "sandeep00") {
-        window.location.href = "index.html"; // Redirect to properties page
+        alert("Login successful! Redirecting...");
+        window.location.href = "index.html"; // Redirect to index.html
     } else {
-        errorMessage.textContent = "Invalid email or password. Please try again.";
+        alert("Invalid credentials. Please try again.");
     }
 });
