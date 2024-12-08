@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buying Page</title>
+    <link rel="stylesheet" href="yes.css">
+</head>
+<body>
+    <header>
+        <h1>Property Purchase</h1>
+    </header>
+
+    <section id="propertyDetails">
+        <h2 id="propertyTitle"></h2>
+        <img id="propertyImage" src="" alt="Property Image" />
+        <p id="propertyDescription"></p>
+        <p id="propertyPrice"></p>
+        <p>Enter your details to purchase:</p>
+        <form id="purchaseForm">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Phone Number" required />
+            <button type="submit">Submit Purchase</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const property = urlParams.get('property');
+
+            const properties = {
+                mansion: {
+                    title: "Luxury Mansion",
+                    image: "1111.jpg",
+                    description: "A stunning luxury mansion with 10 bedrooms, a private pool, and a beautiful garden.",
+                    price: "Rs-500,000"
+                },
+                beachhouse: {
+                    title: "Beach House",
+                    image: "2222.jpg",
+                    description: "A serene beach house with ocean views and direct beach access.",
+                    price: "Rs-500,000"
+                },
+                waterfront: {
+                    title: "Waterfront Home",
+                    image: "3333.jpg",
+                    description: "An elegant waterfront home with modern amenities and breathtaking views.",
+                    price: "Rs-500,000"
+                },
+                villa: {
+                    title: "Luxury Villa",
+                    image: "4444.jpg",
+                    description: "A charming luxury villa with contemporary architecture and lush greenery.",
+                    price: "Rs-500,000"
+                }
+            };
+
+            const propertyData = properties[property];
+
+            document.getElementById('propertyTitle').textContent = propertyData.title;
+            document.getElementById('propertyImage').src = propertyData.image;
+            document.getElementById('propertyDescription').textContent = propertyData.description;
+            document.getElementById('propertyPrice').textContent = `Price: ${propertyData.price}`;
+        });
+    </script>
+</body>
+</html>
